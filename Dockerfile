@@ -5,5 +5,5 @@ RUN apt-get update && \
 
 ADD . /opt/lp5569/.
 
-ENTRYPOINT ["mono", "/opt/lp5569/lasm.exe"]
+ENTRYPOINT ["/bin/bash", "/opt/lp5569/entrypoint.sh"]
 
